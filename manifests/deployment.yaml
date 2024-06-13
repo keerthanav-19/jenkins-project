@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-pythonapp-todo
+spec:
+  selector:
+    matchLabels:
+      app: argocd-pythonapp-todo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: argocd-pythonapp-todo
+    spec:
+      containers:
+      - name: argocd-pythonapp-todo
+        image: myImage
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
