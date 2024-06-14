@@ -2,7 +2,7 @@
 
 ## CICD Architecture [GitHub -> Jenkins -> k8s Manifests -> Argo CD -> k8s cluster]
 
-![screenshot_3](https://github.com/Keerthanachinnu/jenkins-project/blob/main/images/screenshot_3.png)
+![screenshot_3](https://github.com/keerthanav-19/jenkins-project/blob/main/images/screenshot_3.png)
 
 Here are the step-by-step details to set up an end-to-end Jenkins pipeline for a Python application using SonarQube, Argo CD, Helm, and Kubernetes:
 
@@ -16,7 +16,7 @@ Prerequisites:
 
 ### Jenkins Pipeline Stages
 
-![screenshot_2](https://github.com/Keerthanachinnu/jenkins-project/blob/main/images/screenshot_2.PNG)
+![screenshot_2](https://github.com/keerthanav-19/jenkins-project/blob/main/images/screenshot_2.PNG)
 
 ### Explanation of each stage in the Jenkins pipeline script
 Checkout: Checks out the source code from a GitHub repository.
@@ -53,7 +53,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 A simple todo app project 
 
-![screenshot_5](https://github.com/Keerthanachinnu/jenkins-project/blob/main/images/screenshot_5.PNG)
+![screenshot_5](https://github.com/keerthanav-19/jenkins-project/blob/main/images/screenshot_5.PNG)
 
 ### Execute locally and access the application
 Make sure to install the dependencies of the project through the requirements.txt file.
